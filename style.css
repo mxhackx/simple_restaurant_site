@@ -1,0 +1,123 @@
+:root {
+    --primary-color: rgb(0, 54, 72);
+    --secondary-color: #53c0ff;
+    --tertiary-color: #53c0ff;
+    --quaternary-color: rgb(100, 200, 80);
+}
+
+@font-face {
+    font-family: Roboto;
+    src:
+        url("./fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Mont;
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Roboto;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav img {
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-elmt {
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.nav-elmt a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.nav-elmt a:hover {
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--primary-color);
+    transform: scale(1.1);
+    background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: Mont;
+}
+
+#hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background: url("./images/bg.jpg") fixed white;
+    padding: 50px 0px;
+}
+
+#hero a {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+#hero a:hover {
+    background-color: white;
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+#hero h1 {
+    font-size: 40px;
+}
+
+#presentation {
+    color: rgb(87, 87, 87);
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+}
