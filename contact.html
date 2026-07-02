@@ -1,84 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-    <head>
-        <title>Le Comptoir</title>
-        <link rel="icon" href="./images/icon.png">
-        <link rel="stylesheet" href="style.css">
-        <meta http-equiv="refresh" content="10">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
-            <img src="./images/header.png" alt="Le Comptoir(Logo)">
-            <nav class="nav">
-                <ul class="navbar">
-                    <li class="nav-elmt"><a href="./index.html">Accueil</a></li>
-                    <li class="nav-elmt"><a href="./contact.html">Contact</a></li>
-                    <li class="nav-elmt"><a href="./menu.html">Menu</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <form method="POST" action="./action.php">
-                <label for="contact-form-firstname">Prenom</label>
-                <input id="contact-form-firstname" name="contact-form-firstname" type="text" class="contact-form-input">
-                <label for="contact-form-lastname">Prenom</label>
-                <input id="contact-form-lastname" name="contact-form-firstname" type="text" class="contact-form-input">
-                <label for="contact-form-email">Email</label>
-                <input id="contact-form-email" name="contact-form-email" type="email" placeholder="ex:johndoe@gmail.com">
-                <label for="contact-form-tel">Telephone</label>
-                <input id="contact-form-tel" name="contact-form-tel" placeholder="(+229) 01 99 99 99 99">
-                <label for="contact-form-nb">Nombre de convives</label>
-                <input id="contact-form-nb" name="contact-form-nb" type="number">
-                <label for="contact-form-date">Reservation</label>
-                <input id="contact-form-date" name="contact-form-date" type="date">
-                <label for="contact-form-event">Evenement</label>
-                <select id="contact-form-event" name="contact-form-event">
-                    <option value="birth">Anniversaire</option>
-                    <option value="marry">Mariage</option>
-                    <option value="football">Match de foot</option>
-                </select>
-                <label for="contact-form-question">Question</label>
-                <textarea rows="10" cols="100" id="contact-form-question" name="contact-form-question">
+  <head>
+    <title>Le Comptoir</title>
+    <link rel="icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="refresh" content="5" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/header.png" alt="Le Comptoir(Logo)" />
+      <nav class="nav">
+        <ul class="navbar">
+          <li class="nav-elmt"><a href="./index.html">Accueil</a></li>
+          <li class="nav-elmt"><a href="./contact.html">Contact</a></li>
+          <li class="nav-elmt"><a href="./menu.html">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="POST" action="./action.php">
+        <span>
+          <span>
+            <label for="contact-form-firstname">Prenom</label>
+            <input
+              id="contact-form-firstname"
+              name="contact-form-firstname"
+              type="text"
+              class="contact-form-input"
+            />
+          </span>
+          <span>
+            <label for="contact-form-lastname">Prenom</label>
+            <input
+              id="contact-form-lastname"
+              name="contact-form-firstname"
+              type="text"
+              class="contact-form-input"
+            />
+          </span>
+          <span>
+            <label for="contact-form-email">Email</label>
+            <input
+              id="contact-form-email"
+              name="contact-form-email"
+              type="email"
+              placeholder="ex:johndoe@gmail.com"
+            />
+          </span>
+          <span>
+            <label for="contact-form-tel">Telephone</label>
+            <input
+              id="contact-form-tel"
+              name="contact-form-tel"
+              placeholder="(+229) 01 99 99 99 99"
+            />
+          </span>
+          <span>
+            <label for="contact-form-nb">Nombre de convives</label>
+            <input id="contact-form-nb" name="contact-form-nb" type="number" />
+          </span>
+          <span>
+            <label for="contact-form-date">Reservation</label>
+            <input
+              id="contact-form-date"
+              name="contact-form-date"
+              type="date"
+            />
+          </span>
+          <span>
+            <label for="contact-form-event">Evenement</label>
+            <select id="contact-form-event" name="contact-form-event">
+              <option value="birth">Anniversaire</option>
+              <option value="marry">Mariage</option>
+              <option value="football">Match de foot</option>
+            </select>
+          </span>
+          <span>
+            <label for="contact-form-question">Question</label>
+            <textarea
+              rows="10"
+              cols="100"
+              id="contact-form-question"
+              name="contact-form-question"
+            >
                     Vous avez une question ?
-                </textarea>
-                <p>Acceptez vous les conditions d'utilisation ?</p>
-                <input id="condition-yes" name="contact-form-condition" type="radio" value="yes">
-                <label for="condition-yes">J'ai lu et j'accepte les conditions d'utilisation</label>
-                <input id="condition-no" name="contact-form-condition" type="radio" value="no">
-                <label for="condition-no">Je n'accepte pas les conditions</label>
-            </form>
-        </main>
+                </textarea
+            >
+          </span>
+          <p>Acceptez vous les conditions d'utilisation ?</p>
+          <input
+            id="condition-yes"
+            name="contact-form-condition"
+            type="radio"
+            value="yes"
+          />
+          <label for="condition-yes"
+            >J'ai lu et j'accepte les conditions d'utilisation</label
+          >
+          <input
+            id="condition-no"
+            name="contact-form-condition"
+            type="radio"
+            value="no"
+          />
+          <label for="condition-no">Je n'accepte pas les conditions</label>
+        </span>
+      </form>
+    </main>
     <footer>
-        <address>
-            <ul id="footer-contact">
-                <li>
-                    <p>Contacts Presse</p>
-                    <p>Bureau de presse Pascale Venot</p>
-                </li>
-                <li>
-                    <p>Clara Schwarz</p>
-                    <p>06 77 60 44 82</p>
-                    <p>clara@pascalevenot.fr</p>
-                </li>
-                <li>
-                    <p>Clara Schwarz</p>
-                    <p>06 77 60 44 82</p>
-                    <p>clara@pascalevenot.fr</p>
-                </li>
-            </ul>
-            <div id="mail-location">
-                <a href="mailto:#">Mail: lecomptoir@gmail.com</a>
-                <p>Bénin, Cotonou Quartier Zogbohouè</p>
-            </div>
-        </address>
-        <div id="horaire-links">
-            <span>Heur d'ouverture - 08H00 a 18H00</span>
-            <ul id="footer-links">
-                <li><a href="facebook.com" target="_blank" rel="noopener"><img src="./images/facebook.png" alt="Facebook"></a></li>
-                <li><a href="x.com" target="_blank" rel="noopener"><img src="./images/x.png" alt="X (Twitter.com)"></a></li>
-                <li><a href="instagram.com" target="_blank" rel="noopener"><img src="./images/insta.png" alt="Instagram"></a></li>
-            </ul>
+      <address>
+        <ul id="footer-contact">
+          <li>
+            <p>Contacts Presse</p>
+            <p>Bureau de presse Pascale Venot</p>
+          </li>
+          <li>
+            <p>Clara Schwarz</p>
+            <p>06 77 60 44 82</p>
+            <p>clara@pascalevenot.fr</p>
+          </li>
+          <li>
+            <p>Clara Schwarz</p>
+            <p>06 77 60 44 82</p>
+            <p>clara@pascalevenot.fr</p>
+          </li>
+        </ul>
+        <div id="mail-location">
+          <a href="mailto:#">Mail: lecomptoir@gmail.com</a>
+          <p>Bénin, Cotonou Quartier Zogbohouè</p>
         </div>
+      </address>
+      <div id="horaire-links">
+        <span>Heur d'ouverture - 08H00 a 18H00</span>
+        <ul id="footer-links">
+          <li>
+            <a href="facebook.com" target="_blank" rel="noopener"
+              ><img src="./images/facebook.svg" alt="Facebook" width="30"
+            /></a>
+          </li>
+          <li>
+            <a href="x.com" target="_blank" rel="noopener"
+              ><img src="./images/twitter.svg" alt="X (Twitter.com)" width="30"
+            /></a>
+          </li>
+          <li>
+            <a href="instagram.com" target="_blank" rel="noopener"
+              ><img src="./images/instagram.svg" alt="Instagram" width="30"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
+</html>
