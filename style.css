@@ -240,8 +240,83 @@ label {
     color: black;
 }
 
-input:focus {
-    border: 0px;
-    background-color: ;
+.meal-section {
+    color: black;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(145, 239, 255);
+    padding: 2%;
+    margin: 20px auto;
 }
 
+.meal-section h3 {
+
+}
+
+.meal {
+    width: 200px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 3px -1px rgb(0 0 0 / 0.1), 
+            0 -4px 3px -1px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 0.4s;
+}
+
+.meal:hover {
+    transform: scale(1.05);
+}
+
+.meal-list {
+    display: flex;
+    gap: 45px;
+    margin: auto;
+}
+
+.meal h4 {
+    color: var(--secondary-color);
+}
+
+.price {
+    justify-content: left;
+    color: grey;
+}
+
+.meal div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    justify-content:space-between;
+}
+
+.meal div + p {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.meal img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 0.1);
+}
+
+.meal button {
+    width: 30%;
+    margin: auto;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all ease 0.4s;
+}
+
+.meal button:hover {
+    background-color: #82d1ff;
+    transform: scale(1.1);
+}
