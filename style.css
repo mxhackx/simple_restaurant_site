@@ -15,6 +15,8 @@
     src: url("./fonts/Montserrat-Regular.ttf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body {
     color: white;
     margin: 0;
@@ -183,6 +185,9 @@ address {
 
 main {
     width: 100%;
+    padding-top: 20px;
+    background-color: #fdf6e3;
+    padding: 20px;
 }
 
 form {
@@ -245,75 +250,99 @@ label {
     width: 95%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(145, 239, 255);
-    padding: 2%;
+    background-color: #e8f5f4;
+    padding: 40px 20px;
     margin: 20px auto;
 }
 
 .meal-section h3 {
+    font-family: "Playfair Display",serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 40px;
 
 }
+    
 
 .meal {
-    width: 200px;
-    height: 400px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 3px -1px rgb(0 0 0 / 0.1), 
-            0 -4px 3px -1px rgb(0 0 0 / 0.1);
-    border-radius: 10px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all ease 0.4s;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+main h1{
+    color: #1565c0;
+}
+main h2{
+    color: #333;
 }
 
+    
+
 .meal:hover {
-    transform: scale(1.05);
+    background-color: #0d47a1;
 }
 
 .meal-list {
+    list-style: none;
     display: flex;
-    gap: 45px;
-    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
 }
 
 .meal h4 {
-    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin: 0;
 }
 
 .price {
-    justify-content: left;
-    color: grey;
+    font-weight: bold;
+    color: #1565c0;
+    font-size: 1.1rem;
+
+
 }
 
 .meal div {
-    width: 80%;
+    
     display: flex;
     align-items: center;
-    margin: 0px auto;
+    margin-bottom: 10px;
     justify-content:space-between;
 }
 
 .meal div + p {
-    width: 80%;
-    margin: 0px auto;
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
 }
 
 .meal img {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 0.1);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+ 
 }
 
 .meal button {
-    width: 30%;
+    background-color: #1565c0;
+    color: white;
+    padding: 10px 20px;
+    width: auto;
     margin: auto;
-    border: 0px;
-    border-radius: 10px;
-    padding: 10px;
-    transition: all ease 0.4s;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 24px;
+    transition:  0.3s;
+    cursor: pointer;
 }
 
 .meal button:hover {
