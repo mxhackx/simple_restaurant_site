@@ -204,6 +204,10 @@ footer {
     #footer-contact {
         align-items: center;
     }
+    .pre-p p {
+        margin: 10px 10px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 700px)
@@ -260,14 +264,17 @@ footer {
     margin: auto;
     display: flex;
     padding: 10px 0px;
-    text-align: right;
+    text-align: left;
 }
 
 .pre-p img {
     width: 100%;
-    align-items: center;
     border-radius: 20px;
-    margin: 0px 10px;
+}
+
+.pre-p p {
+    margin: 20px 15px;
+    text-align: left;
 }
 
 #section-une {
