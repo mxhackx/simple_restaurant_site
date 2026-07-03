@@ -162,7 +162,7 @@ h1, h2, h3 {
     margin: 0px 10px;
 }
 
-@media (max-width: 768px)
+@media (max-width: 1100px)
 {
     .pre-p {
         width: 90%;
@@ -219,58 +219,84 @@ main {
 }
 
 form {
-    width: 50%;
-    margin: 20px auto;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 
-            0 2px 4px -2px rgb(0 0 0 / 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    background: linear-gradient(180deg, rgb(255, 216, 158), rgb(255, 200, 210), rgb(255, 226, 137));
+  max-width: 60%;
+  min-height: 40%;
+  margin: 5% auto;
+  padding: 25px;
+  background: linear-gradient(180deg, pink, rgb(255, 221, 100));
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
 }
 
 form span {
-    width: 70%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
+  display: block;
 }
 
-form span span input {
-    padding: 5px;
-    border: 0px solid;
-    border-radius: 4px;
-    box-shadow: 0 4px 3px -1px rgb(0 0 0 / 0.1), 
-            0 -4px 3px -1px rgb(0 0 0 / 0.1);
-    font-size: 15px;
-
-}
-
-form span span {
-    padding-bottom: 20px;
-}
-
-form span label {
-    display: block;
-    padding-bottom: 10px;
-}
-
-form textarea {
-    width: 100%;
-    margin: 0px auto;
-    border: 0px;
-    box-shadow: 0 4px 3px -1px rgb(0 0 0 / 0.1), 
-            0 -4px 3px -1px rgb(0 0 0 / 0.1);
-    height: 100px;
-    border-radius: 10px;
-    resize: none;
+form span > span {
+  display: block;
+  margin-bottom: 15px;
 }
 
 label {
-    color: black;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(74,144,226,0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form p {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+label[for="condition-yes"],
+label[for="condition-no"] {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: var(--color2);
 }
 
 .meal-section {
@@ -308,8 +334,14 @@ main h2{
 }
 
 .meal:hover {
-    background-color: var(--primary-color);
+    background-color: var(--color2);
+    color: white;
     transform: scale(1.1);
+}
+
+.meal .price:hover
+{
+    color: rgb(176, 255, 116);
 }
 
 .meal-list {
@@ -328,7 +360,6 @@ main h2{
 
 .price {
     font-weight: bold;
-    color:  var(--color2);
     font-size: 1.1rem;
 }
 
