@@ -116,6 +116,115 @@ h1, h2, h3 {
 #hero p {
     font-size: 20px;
 }
+footer {
+    background: var(--quaternary-color);
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+
+#horaire-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 220px;
+}
+
+#horaire-links span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#footer-links {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-links li a img {
+    transition: 0.2s ease;
+}
+
+#footer-links li a img:hover {
+    transform: scale(1.1);
+}
+
+#footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer-contact li p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
+#mail-location {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ebebeb;
+}
+
+#mail-location a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#mail-location a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 850px)
+{
+    #hero h1 {
+        font-size: 25px;
+    }
+    #hero p {
+        font-size: 15px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #horaire-links,
+    #footer-contact {
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px)
+{
+    #hero h1 {
+        font-size: 18px;
+    }
+    .nav-elmt a {
+        font-size: 15px;
+        padding: 5px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .pre-p {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+}
 
 #presentation {
     width: 100%;
@@ -156,18 +265,9 @@ h1, h2, h3 {
 
 .pre-p img {
     width: 100%;
-    height: ;
     align-items: center;
     border-radius: 20px;
     margin: 0px 10px;
-}
-
-@media (max-width: 1100px)
-{
-    .pre-p {
-        width: 90%;
-        flex-wrap: wrap;
-    }
 }
 
 #section-une {
@@ -187,30 +287,6 @@ h1, h2, h3 {
     background-color: var(--color1);
     border-radius: 20px;
     padding: 10px;
-}
-
-footer {
-    background-color: var(--quaternary-color);
-    display: flex;
-    flex-shrink: 0;
-    margin: 0;
-}
-
-address {
-    display: flex;
-}
-
-
-
-#footer-links {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    flex-direction: row;
-}
-
-#footer-contact{
-    display: flex;
 }
 
 main {
