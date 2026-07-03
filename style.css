@@ -1,7 +1,9 @@
 :root {
-    --primary-color: rgb(0, 54, 72);
-    --secondary-color: #53c0ff;
-    --quaternary-color: rgb(0, 125, 179);
+    --primary-color:  	#c1853b;
+    --secondary-color:  #cc1b1b;
+    --quaternary-color:  #a84127;
+    --color1: #e7ad65;
+    --color2: #2f0505;
 }
 
 @font-face {
@@ -21,7 +23,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    background-color: rgb(254, 255, 222);
+    background-color: var(--color1);
     font-family: Roboto;
 }
 
@@ -129,22 +131,50 @@ h1, h2, h3 {
 
 .quality {
     display: flex;
-    padding: 20px;
+    flex-direction: row;
     color: white;
     gap: 60px;
-    height: 300px;
+    height: 40%;
+    width: 90%;
+    margin: 40px auto;
     color: white;
-    background-color: var(--quaternary-color);
+    background-color: var(--color1);
 }
 
-.quality img {
+.quality + span {
+    width: 100%;
+    height: 100%;
+}
+
+.pre-p {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 10px 0px;
+    text-align: right;
+}
+
+.pre-p img {
+    width: 100%;
+    height: ;
+    align-items: center;
     border-radius: 20px;
+    margin: 0px 10px;
+}
+
+@media (max-width: 768px)
+{
+    .pre-p {
+        width: 90%;
+        flex-wrap: wrap;
+    }
 }
 
 #section-une {
     display: flex;
     flex-direction: row;
     margin: auto;
+    background-color: var(--quaternary-color);
 }
 
 .a-la-une {
@@ -154,7 +184,7 @@ h1, h2, h3 {
     width: 400px;
     height: 300px;
     margin: 30px;
-    background-color: #82d1ff;
+    background-color: var(--color1);
     border-radius: 20px;
     padding: 10px;
 }
@@ -185,9 +215,7 @@ address {
 
 main {
     width: 100%;
-    padding-top: 20px;
-    background-color: #fdf6e3;
-    padding: 20px;
+    background-color: var(--color1);
 }
 
 form {
@@ -250,16 +278,15 @@ label {
     width: 95%;
     display: flex;
     flex-direction: column;
-    background-color: #e8f5f4;
     padding: 40px 20px;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 .meal-section h3 {
     font-family: "Playfair Display",serif;
     font-size: 2rem;
     text-align: center;
-    color: #1565c0;
+    color: black;
     margin-bottom: 40px;
 
 }
@@ -270,21 +297,19 @@ label {
     border-radius: 16px;
     padding: 20px;
     width: 260px;
+    margin: 0px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s;
 }
-main h1{
-    color: #1565c0;
-}
+
 main h2{
     color: #333;
 }
 
-    
-
 .meal:hover {
-    background-color: #0d47a1;
+    background-color: var(--primary-color);
+    transform: scale(1.1);
 }
 
 .meal-list {
@@ -303,14 +328,11 @@ main h2{
 
 .price {
     font-weight: bold;
-    color: #1565c0;
+    color:  var(--color2);
     font-size: 1.1rem;
-
-
 }
 
 .meal div {
-    
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -333,7 +355,7 @@ main h2{
 }
 
 .meal button {
-    background-color: #1565c0;
+    background-color: var(--color1);
     color: white;
     padding: 10px 20px;
     width: auto;
@@ -346,6 +368,7 @@ main h2{
 }
 
 .meal button:hover {
-    background-color: #82d1ff;
+    color:var(--color1);
+    background-color: white;
     transform: scale(1.1);
 }
