@@ -1,0 +1,108 @@
+{
+    "Entrees": [
+        {
+            "name": "Salade fraîche du chef",
+            "price": 2000,
+            "description": "Une entrée légère et savoureuse préparée avec des produits frais.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Soupe maison",
+            "price": 2000,
+            "description": "Une soupe chaude et réconfortante aux légumes de saison.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Beignets croustillants",
+            "price": 2000,
+            "description": "Petites bouchées dorées et croustillantes.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Salade fraîche du chef",
+            "price": 2000,
+            "description": "Une entrée légère et savoureuse préparée avec des produits frais.",
+            "img": ".\/public\/images\/1.jpg"
+        }
+    ],
+    "Plats principaux": [
+        {
+            "name": "Poulet braisé signature",
+            "price": 2000,
+            "description": "Poulet grillé aux épices locales et sauce maison.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Poisson grillé",
+            "price": 2000,
+            "description": "Poisson frais grillé, accompagné d’une sauce parfumée.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Riz sauté du Comptoir",
+            "price": 2000,
+            "description": "Riz savoureux préparé avec légumes et épices.",
+            "img": ".\/public\/images\/1.jpg"
+        }
+    ],
+    "Desserts": [
+        {
+            "name": "Crème vanille",
+            "price": 2000,
+            "description": "Un dessert doux et onctueux à la vanille.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Gâteau au chocolat",
+            "price": 2000,
+            "description": "Moelleux et riche en chocolat.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Salade de fruits",
+            "price": 2000,
+            "description": "Fruits frais coupés et légèrement sucrés.",
+            "img": ".\/public\/images\/1.jpg"
+        }
+    ],
+    "Boissons": [
+        {
+            "name": "Jus naturel",
+            "price": 2000,
+            "description": "Jus frais préparé à base de fruits locaux.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Soda frais",
+            "price": 2000,
+            "description": "Boisson pétillante servie bien fraîche.",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "Eau minérale",
+            "price": 2000,
+            "description": "Eau pure et rafraîchissante.",
+            "img": ".\/public\/images\/1.jpg"
+        }
+    ],
+    "Nouvelle catégorie 5": [
+        {
+            "name": "",
+            "price": 0,
+            "description": "",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "",
+            "price": 0,
+            "description": "",
+            "img": ".\/public\/images\/1.jpg"
+        },
+        {
+            "name": "",
+            "price": 0,
+            "description": "",
+            "img": ".\/public\/images\/1.jpg"
+        }
+    ]
+}
